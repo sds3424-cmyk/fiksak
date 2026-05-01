@@ -140,10 +140,7 @@ export default function Home() {
           <div className="about-grid">
             <div className="about-visual reveal">
               <div className="about-photo-frame">
-                <div className="about-photo-inner">
-                  <div className="photo-icon">🌿</div>
-                  <p className="photo-hint">Add your photo here</p>
-                </div>
+                <img src="/photo.jpg" alt="Klaudia Fiksak" style={{width:'100%',height:'100%',objectFit:'cover',objectPosition:'top'}} />
               </div>
               <div className="about-badge">
                 <div className="badge-num">2018</div>
