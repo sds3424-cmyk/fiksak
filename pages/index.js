@@ -76,14 +76,35 @@ export default function Home() {
         <div className="hero-dots"/>
 
         <div className="hero-inner">
-          {/* Left — content */}
+          {/* Left — photo */}
+          <div className="hero-visual">
+            <div className="hero-photo-wrap">
+              <img src="/photo.jpeg" alt="Klaudia Fiksak" />
+            </div>
+            <div className="hero-card hero-card-1">
+              <div className="hero-card-icon teal">🏆</div>
+              <div className="hero-card-text">
+                <div className="label">Experience</div>
+                <div className="value">10+ Years</div>
+              </div>
+            </div>
+            <div className="hero-card hero-card-2">
+              <div className="hero-card-icon coral">📍</div>
+              <div className="hero-card-text">
+                <div className="label">Location</div>
+                <div className="value">Tarnów, PL</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right — content */}
           <div className="hero-content">
             <div className="hero-eyebrow">
               <span className="pill">Now accepting new clients</span>
             </div>
             <h1 className="hero-name">
-              <span className="line1">Klaudia</span>
-              <span className="line2">Fiksak</span>
+              <span className="line1">Hello, I'm</span>
+              <span className="line2">Klaudia Fiksak</span>
             </h1>
             <p className="hero-role">Psychotherapist · Psychologist · Sexologist</p>
             <div className="hero-divider"/>
@@ -111,28 +132,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-
-          {/* Right — photo */}
-          <div className="hero-visual">
-            <div className="hero-photo-wrap">
-              <img src="/photo.jpeg" alt="Klaudia Fiksak" />
-            </div>
-            {/* Floating info cards */}
-            <div className="hero-card hero-card-1">
-              <div className="hero-card-icon teal">🏆</div>
-              <div className="hero-card-text">
-                <div className="label">Experience</div>
-                <div className="value">10+ Years</div>
-              </div>
-            </div>
-            <div className="hero-card hero-card-2">
-              <div className="hero-card-icon coral">📍</div>
-              <div className="hero-card-text">
-                <div className="label">Location</div>
-                <div className="value">Tarnów, PL</div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -141,9 +140,26 @@ export default function Home() {
         <div className="container">
           <div className="about-grid">
             <div className="about-visual reveal" style={{position:'relative'}}>
-              <div className="about-photo-frame">
-                <img src="/photo.jpeg" alt="Klaudia Fiksak" />
+            <div className="about-photo-frame" style={{
+              background:'linear-gradient(160deg,#F5E2C0 0%,#EDCFA0 100%)',
+              display:'flex', alignItems:'center', justifyContent:'center',
+              flexDirection:'column', gap:'1.5rem', padding:'3rem'
+            }}>
+              <div style={{
+                background:'rgba(232,113,26,0.12)', borderRadius:'50%',
+                width:'100px', height:'100px',
+                display:'flex', alignItems:'center', justifyContent:'center',
+                fontSize:'3rem'
+              }}>🌿</div>
+              <div style={{textAlign:'center'}}>
+                <div style={{fontFamily:'var(--font-display)',fontSize:'1.4rem',fontWeight:600,color:'var(--ink)',marginBottom:'0.5rem'}}>
+                  Gabinet Psychologiczno-Terapeutyczny
+                </div>
+                <div style={{fontSize:'0.85rem',color:'var(--ink-50)',fontWeight:400}}>
+                  ul. Romanowicza 24 lok. 2<br/>33-100 Tarnów, Małopolska
+                </div>
               </div>
+            </div>
               <div className="about-badge">
                 <div className="badge-num">2018</div>
                 <div className="badge-txt">Founded</div>
