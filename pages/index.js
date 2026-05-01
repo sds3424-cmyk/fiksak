@@ -115,12 +115,7 @@ export default function Home() {
           {/* Right — photo */}
           <div className="hero-visual">
             <div className="hero-photo-wrap">
-              <div className="hero-photo-placeholder">
-                <div className="photo-icon-wrap">🌿</div>
-                <p style={{fontSize:'0.78rem',letterSpacing:'0.08em',textTransform:'uppercase'}}>
-                  Add your photo
-                </p>
-              </div>
+              <img src="/photo.jpeg" alt="Klaudia Fiksak" />
             </div>
             {/* Floating info cards */}
             <div className="hero-card hero-card-1">
@@ -147,10 +142,7 @@ export default function Home() {
           <div className="about-grid">
             <div className="about-visual reveal" style={{position:'relative'}}>
               <div className="about-photo-frame">
-                <div className="about-photo-inner">
-                  <span className="photo-icon">🌿</span>
-                  <p className="photo-hint">Add your photo here</p>
-                </div>
+                <img src="/photo.jpeg" alt="Klaudia Fiksak" />
               </div>
               <div className="about-badge">
                 <div className="badge-num">2018</div>
